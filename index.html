@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f2de131c34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar bg-white navbar-expand-sm sticky-top fw-bold">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand fs-2">L<span class="text-success">B</span>YH-CBSE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lbyh-navbar" aria-controls="lbyh-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>                       
+            <div class="collapse navbar-collapse" id="lbyh-navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown mt-1">
+                        <a class="nav-item btn btn-outline-success dropdown-toggle" href="#" id="coursesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Class 9th</a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Subcourse 1.1</a>
+                                    <a class="dropdown-item" href="#">Subcourse 1.2</a>
+                                    <a class="dropdown-item" href="#">Subcourse 1.3</a>
+                                </ul>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Class 10th</a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Subcourse 1.1</a>
+                                    <a class="dropdown-item" href="#">Subcourse 1.2</a>
+                                    <a class="dropdown-item" href="#">Subcourse 1.3</a>
+                                </ul>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Class 11th</a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Subcourse 1.1</a>
+                                    <a class="dropdown-item" href="#">Subcourse 1.2</a>
+                                    <a class="dropdown-item" href="#">Subcourse 1.3</a>
+                                </ul>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Class 12th</a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Subcourse 1.1</a>
+                                    <a class="dropdown-item" href="#">Subcourse 1.2</a>
+                                    <a class="dropdown-item" href="#">Subcourse 1.3</a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link mt-1 px-lg-5">
+                        <a href="#" class="text-decoration-none text-success">Contact Us</a>
+                    </li>
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom"></div>
+                    <br>
+                    <li class="nav-item px-3">
+                        <button class="btn btn-success btn-lg">Login/Register</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="profile">
+        <div class="container p-5">
+            <h1 class="my_pro_primary fw-bolder">User Profile</h1>
+            <div class="p-4 user">
+                <i class="fa-solid fa-user-tie fa-3x"></i>
+                <div class="user-name my_pro_primary">
+                    <h4 class="fw-medium">Username</h4>
+                    <p>Class 9</p>
+                </div>
+            </div>
+            <hr>
+            <form action="#">
+                <div class="container py-4">
+                    <div class="row my_pro_primary fw-medium">
+                        <div class="col-md-6">
+                        <h5>First Name</h5>
+                        <input type="text" class="form-control fw-light" placeholder="eg. Alaa">
+                        </div>
+                        <div class="col-md-6">
+                        <h5>Last Name</h5>
+                        <input type="text" class="form-control fw-light" placeholder="eg. Mohamed">
+                        </div>
+                    </div>
+                    <h5 class="pt-lg-3 my_pro_primary fw-medium">Username</h5>
+                    <input type="text" class="form-control fw-light" placeholder="eg. alaa.mohamed">
+                </div>
+                <hr>
+                <div class="container py-4">
+                    <div class="row my_pro_primary fw-medium">
+                        <div class="col-md-6">
+                        <h5>Email Address</h5>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-envelope text-secondary"></i></span>
+                            <input type="email" class="form-control fw-light" placeholder="">
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <h5>Phone Number</h5>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-mobile text-secondary"></i></span>
+                            <input type="tel" class="form-control fw-light" placeholder="">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container py-4">
+                    <div class="row my_pro_primary fw-medium">
+                        <div class="col-md-6">
+                        <h5>Current Password</h5>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-key text-secondary"></i></span>
+                            <input type="password" id="key1" class="form-control fw-light" placeholder="">
+                            <span class="input-group-text"><i class="fa-solid fa-eye-slash text-secondary" onclick="myFunction()"></i></span>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <h5>New Password</h5>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-key text-secondary"></i></span>
+                            <input type="password" id="key2" class="form-control fw-light" placeholder="">
+                            <span class="input-group-text"><i class="fa-solid fa-eye-slash text-secondary" onclick="myFunction2()"></i></span>
+                        </div>
+                        </div>
+                    </div>
+                    <h5 class="pt-lg-3 my_pro_primary fw-medium">Confirm New Password</h5>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-key text-secondary"></i></span>
+                        <input type="password" id="key3" class="form-control fw-light" placeholder="">
+                        <span class="input-group-text"><i class="fa-solid fa-eye-slash text-secondary" onclick="myFunction3()"></i></span>
+                    </div>
+                </div>
+                <div class="row justify-content-end px-4">
+                    <div class="col-auto">
+                    <button style="border: 1px solid grey; color: #008080;" type="button" class="btn">Cancel</button>
+                    <button type="button" class="btn btn-success">Save Changes</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
